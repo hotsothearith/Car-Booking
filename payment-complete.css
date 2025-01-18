@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+}
+header {
+    width: 100%;
+    padding: 15px 50px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 80px; /* Adjust this value if needed */
+    margin-right: 10px;
+}
+
+.logo h4 {
+    color: #1e74e8;
+    font-weight: bold;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.menu li {
+    position: relative; /* Add this line to position the ::after pseudo-element */
+}
+
+.menu li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    display: block; /* Make the link fill the li container */
+    padding: 10px; /* Optional: Adjust for spacing around links */
+}
+
+.menu li::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: blue;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+    opacity: 0.8;
+}
+
+.menu li:hover::after {
+    width: 100%;
+}
+.buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.sign-in {
+    background-color: transparent;
+    border: none;
+    color: #333;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.sign-up {
+    background-color: #1e74e8;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.payment-success{
+    margin-top: 60px;
+    text-align: center;
+}
+.payment-success h1{
+    color: #152C5B;
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.payment-success p{
+    color: #1e74e8;
+}
+.payment-success .btn{
+    background-color: #1e74e8;
+    color: #fff;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #0056b3;
+    color: #fff;
+}
